@@ -1,0 +1,100 @@
+/* This is for Mobile's Viewport */
+.intro {
+  padding: 10px;
+  margin-top: 6px;
+}
+.intro h3,p {
+  text-align: center;
+} 
+.intro p{
+  text-align: center;
+}  
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  text-align: left;
+  padding: 0 10px;
+}
+.content h2,h4,p {
+  text-align: left;
+  margin-top: 0;
+}
+
+/* Added a we bit of margin above the contacts name */
+.content h2{
+  margin-top: 10px;
+}
+.image {
+  margin: auto;
+  order: -1;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 60%;
+  padding-top: 70px;
+  position: relative;
+  height: 45px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.image p {
+  text-align: center;
+  margin: 0;
+}
+.image img{
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+.content p {
+  font-size: 1.1em;
+}
+
+/* This media query is for tablet up to infinite! */
+@media screen and (min-width: 550px){
+  .section{
+    flex-direction: row;
+    align-items: unset;
+    flex-wrap: wrap;
+    /* This is required twice. */
+  }
+  .content {
+    width: 65%;
+  }
+}
+
+/* This media query is for Tablet's Viewport */
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .image {
+    order: -1;
+    width: 150px;
+  }
+  .second-p{
+    width: 150%;
+  }
+}
+
+/* This media query is for Desktop's Viewport */
+@media screen and (min-width: 801px) {  
+  .image {
+    order: 0;
+    width: 30%;
+  }
+  .image img{
+    top: -70px;
+    width: 130px;
+    height: 130px;
+  }
+  .second-p{
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,75 @@
+/* HOME PAGE CONTENT */
+/* Desktop */
+.hero-container{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  /* That text align is mainly for the h3.. */
+}
+.hero-container > a {
+  color: #808080;
+  background-color: white;
+  border: #808080 1px solid;
+  border-radius: 5px;
+  padding: 15px 25px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+
+  text-decoration: unset;
+}
+.hero-container > a:hover{
+  background-color: rgba(204, 204, 204, 0.247); 
+}
+.hero-container > h3 {
+  margin: 0;
+  font-weight: 600;
+}
+.hero-container > p {
+  width: 80%;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+
+
+.image-row-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.image-row{
+  width: 225px;
+}
+.image-row > img {
+  width: inherit;
+  border-radius: 5px;
+}
+.image-row > p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* Mobile/ tablet */
+/* Increases font size of the row images, making it easier to read on mobile devices */
+@media screen and (max-width: 691px) {
+  /* h6 - img - h5 - p */
+  .image-row h6 {
+    font-size: 1.2em;
+    margin-bottom: 3%;
+  }
+  .image-row h5{
+    font-size: 1em;
+    margin: 5% 0;
+  }
+  .image-row p{
+    font-size: 1.2em;
+  }
+}

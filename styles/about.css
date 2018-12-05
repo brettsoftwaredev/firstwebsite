@@ -1,0 +1,38 @@
+/* ABOUT CONTENT */
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+  margin: 30px auto;
+}
+.hero-container > h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2em;
+}
+.hero-container > p {
+  font-weight: 300;
+}
+
+
+.about-container h4{
+  font-weight: 300;
+  font-size: 1.2em;
+  margin: 0;
+  margin-top: 60px;
+}
+.about-container p{
+  font-size: 1em;
+}
+
+/* Applies margin and increases the line height once the screen size begins to decrease, making it easier for the user to read the content */
+@media screen and (max-width: 800px) {
+  .about-container{
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 30px;
+  }
+
+}
